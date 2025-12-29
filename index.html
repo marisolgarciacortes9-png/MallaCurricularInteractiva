@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Personal</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e3f2fd;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 40px;
+    }
+
+    .semester {
+      margin-bottom: 35px;
+    }
+
+    .semester h2 {
+      background: #1565c0;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .subject {
+      background: white;
+      border: 2px solid #1e88e5;
+      padding: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #0d47a1;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .subject:hover {
+      background: #bbdefb;
+      transform: scale(1.05);
+    }
+
+    .subject.active {
+      background: #1e88e5;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Malla Curricular – Uso Personal</h1>
+
+<!-- 1 SEMESTRE -->
+<div class="semester">
+  <h2>1° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Lógica de Programación</div>
+    <div class="subject" onclick="toggle(this)">Álgebra</div>
+    <div class="subject" onclick="toggle(this)">Expresión Oral y Escrita</div>
+    <div class="subject" onclick="toggle(this)">Perspectiva de Género para el Diseño Social</div>
+    <div class="subject" onclick="toggle(this)">Matemáticas Discretas</div>
+    <div class="subject" onclick="toggle(this)">Introducción a las TIC</div>
+  </div>
+</div>
+
+<!-- 2 SEMESTRE -->
+<div class="semester">
+  <h2>2° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Programación Estructurada</div>
+    <div class="subject" onclick="toggle(this)">Cálculo Diferencial</div>
+    <div class="subject" onclick="toggle(this)">Desarrollo Sostenible, Equidad y Responsabilidad Social</div>
+    <div class="subject" onclick="toggle(this)">Cálculo Integral</div>
+    <div class="subject" onclick="toggle(this)">Sistemas Lógicos</div>
+    <div class="subject" onclick="toggle(this)">Estructura de Datos</div>
+  </div>
+</div>
+
+<!-- 3 SEMESTRE -->
+<div class="semester">
+  <h2>3° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Organización Computacional</div>
+    <div class="subject" onclick="toggle(this)">Cálculo Vectorial</div>
+    <div class="subject" onclick="toggle(this)">Pensamiento Complejo para la Argumentación</div>
+    <div class="subject" onclick="toggle(this)">Probabilidad y Estadística</div>
+    <div class="subject" onclick="toggle(this)">Métodos Numéricos</div>
+    <div class="subject" onclick="toggle(this)">Electricidad y Magnetismo</div>
+  </div>
+</div>
+
+<!-- 4 SEMESTRE -->
+<div class="semester">
+  <h2>4° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Lenguajes de Programación</div>
+    <div class="subject" onclick="toggle(this)">Base de Datos</div>
+    <div class="subject" onclick="toggle(this)">Gestión e Innovación Tecnológica</div>
+    <div class="subject" onclick="toggle(this)">Ingeniería de Software</div>
+    <div class="subject" onclick="toggle(this)">Redes</div>
+    <div class="subject" onclick="toggle(this)">Laboratorio de Innovación Social</div>
+  </div>
+</div>
+
+<!-- 5 SEMESTRE -->
+<div class="semester">
+  <h2>5° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Sistema de Información</div>
+    <div class="subject" onclick="toggle(this)">Sistemas Operativos</div>
+    <div class="subject" onclick="toggle(this)">Economía Digital</div>
+    <div class="subject" onclick="toggle(this)">Administración de Proyectos</div>
+    <div class="subject" onclick="toggle(this)">Teoría y Práctica de la Optimización</div>
+    <div class="subject" onclick="toggle(this)">Ciberseguridad</div>
+  </div>
+</div>
+
+<!-- 6 SEMESTRE -->
+<div class="semester">
+  <h2>6° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Análisis de Sistemas de Cómputo</div>
+    <div class="subject" onclick="toggle(this)">Desarrollo de Aplicaciones para Dispositivos</div>
+    <div class="subject" onclick="toggle(this)">Administración Avanzada de Proyectos</div>
+    <div class="subject" onclick="toggle(this)">Inteligencia Artificial</div>
+    <div class="subject" onclick="toggle(this)">Introducción a la Práctica Profesional</div>
+  </div>
+</div>
+
+<!-- 7 SEMESTRE -->
+<div class="semester">
+  <h2>7° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Seminario de Titulación I</div>
+    <div class="subject" onclick="toggle(this)">Implicaciones en la Distribución y Uso de Sistemas</div>
+    <div class="subject" onclick="toggle(this)">Aplicaciones Web</div>
+    <div class="subject" onclick="toggle(this)">Seminario de Gobierno de TI</div>
+    <div class="subject" onclick="toggle(this)">Habilidades Gerenciales</div>
+    <div class="subject" onclick="toggle(this)">Práctica Profesional I</div>
+  </div>
+</div>
+
+<!-- 8 SEMESTRE -->
+<div class="semester">
+  <h2>8° Semestre</h2>
+  <div class="grid">
+    <div class="subject" onclick="toggle(this)">Innovación y Disrupción</div>
+    <div class="subject" onclick="toggle(this)">Seminario de Titulación II</div>
+    <div class="subject" onclick="toggle(this)">Seminario de Administración de Servicios Tecnológicos</div>
+    <div class="subject" onclick="toggle(this)">Análisis de Casos de Éxito en TIC</div>
+    <div class="subject" onclick="toggle(this)">Análisis de Sistemas de Distribución Abierta</div>
+    <div class="subject" onclick="toggle(this)">Práctica Profesional II</div>
+  </div>
+</div>
+
+<script>
+  function toggle(element) {
+    element.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
